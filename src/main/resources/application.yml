@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: BugBounty
+  data:
+    mongodb:
+      uri: ${MONGO_URI}
+      database: ${DBNAME}
+      auto-index-creation: true
+
+jwt:
+  secret: ${JWTSECRET}
