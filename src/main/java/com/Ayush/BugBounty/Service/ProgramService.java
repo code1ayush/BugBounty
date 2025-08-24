@@ -60,7 +60,7 @@ public class ProgramService {
 
     public ResponseEntity<?> getProgramById(String id, String userName){
         User user = userRepository.findByUserName(userName);
-        List<Program>collect = user.getProgramEntries().stream().filter(t->t.getId().equals(id)).toList();
+        List<Program>collect = programRepository.findAll().stream().filter(t->t.getId().equals(id)).toList();
         if(!collect.isEmpty()){
             Optional<Program> programEntry = programRepository.findById(id);
             if(programEntry.isPresent()){

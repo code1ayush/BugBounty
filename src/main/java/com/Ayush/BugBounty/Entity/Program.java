@@ -17,17 +17,41 @@ public class Program {
 
     private String title;
 
+    private String companyName;
+
     private String description;
 
     private String scope;
 
     private String rewardRange;
 
-    private String image;
+    private String maxReward;
+
+    private String status;
+
+    private String programType;
+
+    private List<String> tags;
 
     private String createdBy;
 
     private String createdAt;
+
+    private String updatedAt;
+
+    private String expiryDate;
+
+    private String reportCount;
+
+    private String resolvedCount;
+
+    private String contactEmail;
+
+    private String policyUrl;
+
+    private String disclosurePolicy;
+
+    private String image;
 
     @DBRef
     private List<BugReport>submittedReport = new ArrayList<>();

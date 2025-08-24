@@ -28,4 +28,21 @@ public class BugReport {
     private Status status;
 
     private String createdAt;
+
+    private String updatedAt;
+
+    private String assignee;
+
+    private String vulnerabilityType;
+
+    private String stepsToReproduce;
+
+    private String impact;
+
+    private String references;
+
+    private String reporterScore;
+
+    private String isDuplicate;
+
 }
